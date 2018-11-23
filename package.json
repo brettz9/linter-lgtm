@@ -1,0 +1,32 @@
+{
+  "name": "linter-lgtm",
+  "main": "index.js",
+  "version": "0.1.0",
+  "author": "Brett Zamir",
+  "contributors": [],
+  "description": "Atom linter for LGTM.com",
+  "keywords": ["atom", "linter", "lgtm"],
+  "engines": {
+    "atom": ">=1.32.2 <2.0.0"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/brettz9/linter-lgtm",
+  "homepage": "https://github.com/brettz9/linter-lgtm",
+  "bugs": "https://github.com/brettz9/linter-lgtm/issues",
+  "configSchema": {
+    "token": {
+      "type": "string",
+      "title": "Token",
+      "description": "*API Token for LGTM.com*",
+      "default": ""
+    }
+  },
+  "dependencies": {},
+  "providedServices": {
+    "linter": {
+      "versions": {
+        "2.0.0": "provideLinter"
+      }
+    }
+  }
+}
