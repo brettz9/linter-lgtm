@@ -5,7 +5,11 @@
   "author": "Brett Zamir",
   "contributors": [],
   "description": "Atom linter for LGTM.com",
-  "keywords": ["atom", "linter", "lgtm"],
+  "keywords": [
+    "atom",
+    "linter",
+    "lgtm"
+  ],
   "engines": {
     "atom": ">=1.32.2 <2.0.0"
   },
@@ -21,7 +25,11 @@
       "default": ""
     }
   },
-  "dependencies": {},
+  "dependencies": {
+    "git-url-parse": "^11.1.1",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.5"
+  },
   "providedServices": {
     "linter": {
       "versions": {
