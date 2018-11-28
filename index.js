@@ -78,6 +78,12 @@ export function provideLinter () {
           windowsHide: true
       };
 
+      // Todo: The token should not actually be stored in config like
+      //    this as it may be shared when users share their configs;
+      //    Atom unfortunately doesn't have a hidden type, so would
+      //    need to save in the home directory or something and find
+      //    another way to get the user to enter their token as opposed
+      //    to having a textbox available within settings as it is now.
       // 1. Get token
       const token = atom.config.get('linter-lgtm.token');
 
