@@ -232,27 +232,27 @@ export function provideLinter () {
         excerpt: `A random value is ${Math.random()}; token: ${token} test`,
         description: `### What is this?\nThis is a randomly generated value`
 
-      /*
-      solutions?: Array<{
-      title?: string,
-      position: Range,
-      priority?: number,
-      currentText?: string,
-      replaceWith: string,
-      } | {
-      title?: string,
-      position: Range,
-      priority?: number,
-      apply: (() => any),
-      }>,
-      reference: {
+        /*
+        solutions?: Array<{
+        title?: string,
+        position: Range,
+        priority?: number,
+        currentText?: string,
+        replaceWith: string,
+        } | {
+        title?: string,
+        position: Range,
+        priority?: number,
+        apply: (() => any),
+        }>,
+        reference: {
         elsewhere in file, e.g., class def.
         file: absolute path, position: Point
-      }
-      url: explanation URL
-      icon: octicon for gutter
-      linterName: override default name
-      */
+        }
+        url: explanation URL
+        icon: octicon for gutter
+        linterName: override default name
+        */
       }];
     }
   };
