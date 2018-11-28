@@ -70,7 +70,7 @@ export function provideLinter () {
     lintsOnChange: false, // Only set to `true` if linting between saves
     grammarScopes: ['source.js'], // Todo: Could support other languages
     async lint (textEditor) {
-    // const text = textEditor.getText();
+      // const text = textEditor.getText();
       const editorPath = textEditor.getPath();
       const cwd = dirname(editorPath);
       const cwdDirInstance = new Directory(cwd);
@@ -117,7 +117,7 @@ export function provideLinter () {
       const token = atom.config.get('linter-lgtm.token');
 
       // 2. Determine `external-id` (e.g., PR number)
-      // We just make up our own
+      // For now, we just make up our own
       const externalID = 1; // new Date().getTime();
 
       // 3. Get last commit SHA
