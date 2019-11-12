@@ -1,8 +1,7 @@
-/* eslint-disable no-warning-comments */
 /* globals atom */
 'use babel';
 
-import {promisify} from 'util'; // eslint-disable-line node/no-unsupported-features/node-builtins, max-len
+import {promisify} from 'util';
 import {dirname} from 'path';
 import {exec as execOriginal} from 'child_process';
 
@@ -20,7 +19,7 @@ const hostToProviderShortNameMap = new Map([
 
 /**
  *
- * @param {Array} args
+ * @param {GenericArray} args
  * @returns {undefined}
  */
 function log (...args) {
@@ -31,7 +30,7 @@ function log (...args) {
 }
 /**
  *
- * @param {Array} args
+ * @param {GenericArray} args
  * @returns {undefined}
  */
 function warn (...args) {
@@ -60,8 +59,12 @@ export function deactivate () { // Optional
 }
 
 /**
+* @external LinterObject
+*/
+
+/**
  *
- * @returns {Object}
+ * @returns {LinterObject}
  */
 export function provideLinter () {
   return {

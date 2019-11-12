@@ -10,22 +10,17 @@ module.exports = {
     node: true,
   },
   settings: {
-    polyfills: [],
+    polyfills: [
+      'Map'
+    ],
     jsdoc: {
       additionalTagNames: {
         // In case we need to extend
         customTags: []
       },
-      tagNamePreference: {
-        arg: "param",
-        return: "returns"
-      },
       allowOverrideWithoutParam: true,
       allowImplementsWithoutParam: true,
-      allowAugmentsExtendsWithoutParam: true,
-      // For `jsdoc/check-examples` in `ash-nazg`
-      matchingFileName: "dummy.md",
-      rejectExampleCodeRegex: "^`",
+      allowAugmentsExtendsWithoutParam: true
     }
   },
   overrides: [
